@@ -1,0 +1,80 @@
+{%load static%}
+<html>
+  <head>
+    <title>Comment Section</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'comments.css'%}">
+    <style>
+        
+        .form{
+            background-color: rgb(208, 238, 255);
+            color: black;
+            height:40px;
+            border-radius: 5px;
+            width:88%;
+          }
+        .submit{
+            background-color: rgb(208, 238, 255);
+            color: black;
+            position: absolute;
+            right:10px;
+            top:4px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+        <div class="row">
+            <!--Portfolio item starts-->
+            <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <body>
+            <div class="container">
+                    <div class="navbar">
+                        <img src="{% static 'logo.png' %}" class="logo">
+        
+                        <img src="" class="logo">
+                            <nav>
+                                <ul>
+                                    <li><a href="afterlogin.html">Home</a></li>
+                                    <li><a href="blog_index.html">Articles</a></li>
+                                    <button class="button1" onclick="sos()"> SOS</button>
+                                    <li><a href="login.html">{{ user.username }}(Logout)</a></li>
+                                    
+                                    
+        
+                                </ul>
+                            </nav>
+                        <img src="" class="">
+                    </div>
+                
+            </div>
+        
+        <div class="Message">
+            <form class="form" action="" method="post"> 
+                {% csrf_token %}
+                <input class="form" title="Write Message" name="comment" placeholder="Start sharing your feelings..">
+                <input class="submit" type="submit" value="Submit">
+            </form>
+
+        </div>
+        {% for i in Comment1 %}
+        <div>
+            <div class="card">
+           
+                  <p class="date-time">{{i.dates}}</p>
+                  <p class="comment" style="width:90%">{{i.context}}</p>
+                  <div class="author">{{i.user}}</div>
+            
+             </div>
+        </div>
+        <br>
+        <br>
+        {% endfor %}
+    </div>
+</body>
+</html>

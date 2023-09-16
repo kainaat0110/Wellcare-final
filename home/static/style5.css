@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.col{
+  position: absolute;
+      top: 200px;
+      left: 100px;
+      padding-bottom: 195px;
+      padding-right: 215px;
+     
+      
+      background-color: transparent;
+      box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
+  
+}
+.card-h-100{
+height: fit-content;
+width: fit-content;
+}
+
+.container{
+  height: 100px;
+  width: 1340px;
+  border: none;
+  background-color: #c8f3fa;
+ 
+  align-items: center;
+  
+
+}
+.navbar{
+  width: 110%;
+  height: 15vh;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  font-size: large;
+  
+}
+.logo{
+  width: 200px;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+nav{
+  flex:1.5;
+  padding-left: 300px;
+
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 16px;
+
+}
+.logo1{
+  
+  height: 500px;
+  width: 600px;
+  margin-left: 400px;
+  position: relative;
+  right:7%;
+  bottom: 20%;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #023047;
+}
+.button1 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 2px solid #FF0072;
+  border-radius: 22px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #FF0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  font-weight: 1000;
+}
+
+.button1:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #FF0072;
+  z-index: -1;
+  border-radius: 22px;
+}
+
+.button1:hover, button1:focus {
+  color: white;
+}
+
+.button1:hover:before, .button1:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button1:active {
+  transform: scale(0.9);
+}
+
+.Depbtn{
+      position: absolute;
+      top: 200px;
+      left: 500px;
+      padding-top: 130px;
+      padding-right: 210px; 
+      padding-bottom: 65px;  
+      background-color: transparent;
+      box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
+
+  }
+.Angissue{
+  position: absolute;
+      top: 200px;
+      left: 900px;
+      padding-top: 130px;
+      padding-right: 200px; 
+      padding-bottom: 68px;  
+      background-color: transparent;
+      box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
+
+
+} 
+.hel{
+  
+      position: absolute;
+      top: 550px;
+      left: 900px;
+      padding-top: 130px;
+      padding-right: 210px; 
+      padding-bottom: 68px;  
+      background-color: transparent;
+      box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
+  
+  
+
+}
+.Rel{
+  position: absolute;
+      top: 550px;
+      left: 500px;
+      padding-top: 130px;
+      padding-right: 195px; 
+      padding-bottom: 68px;  
+      background-color: transparent;
+      box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
+
+
+  } 
+.Mdswing{
+  
+      position: absolute;
+          top: 550px;
+          left: 100px;
+          padding-top: 130px;
+          padding-right: 200px; 
+          padding-bottom: 68px;  
+          background-color: transparent;
+          box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
+  
+  
+  
+}
+
+.input-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+position: relative;
+}
+
+.input {
+position: absolute;
+top: 23px;
+left: 520px;
+border-style: none;
+height: 50px;
+width: 50px;
+padding: 10px;
+outline: none;
+border-radius: 50%;
+transition: .5s ease-in-out;
+background-color: #4faed4;
+box-shadow: 0px 0px 3px #2b2929;
+padding-right: 40px;
+color: #4e4646;
+}
+
+.input::placeholder,
+.input {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 17px;
+
+}
+
+.input::placeholder {
+color: #585252;
+
+}
+
+.icon {
+position: absolute;
+top: 23px;
+left: 520px;
+cursor: pointer;
+width: 50px;
+height: 50px;
+outline: none;
+border-style: none;
+border-radius: 50%;
+pointer-events: painted;
+transition: .2s linear;
+text-decoration-color: #023047;
+}
+
+.icon:focus ~ .input,
+.input:focus {
+box-shadow: none;
+width: 250px;
+border-radius: 0px;
+background-color: transparent;
+border-bottom: 3px solid #4fb5d4;
+transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.label{
+  position: absolute;
+  top: 900px;
+  left: 100px;
+  text-decoration: underline;
+  font-weight: 400;
+  line-height: 35px;
+}
+

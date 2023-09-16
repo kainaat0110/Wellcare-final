@@ -1,0 +1,90 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS</title>
+    <link rel="stylesheet" href="{% static 'sos2.css' %}">
+    <style>
+      nav{
+        flex:1.5;
+        padding-left: 340px;
+      }
+      .div{
+        margin-left:300px;
+        line-height: 60px;
+        margin-right: 300px;
+        background-color: #c8f3fa;
+        border-radius:5px;
+        margin-top:100px;
+        margin-bottom:200px;
+        padding-left:20px;
+        padding-right:20px;
+      }
+    </style>
+</head>
+<div class="row">
+    <!--Portfolio item starts-->
+    <div class="portfolio-item padd-15">
+        <div class="portfolio-item-inner shadow-dark">
+            <div class="portfolio-img">
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+    <div class="container">
+            <div class="navbar">
+                <img src="{% static 'logo.png' %}" class="logo">
+
+                <img src="" class="logo">
+                    <nav>
+                        <ul>
+                            <li><a href="afterlogin.html">Home</a></li>
+                            <li><a href="blog_index.html">Articles</a></li>
+                            <button class="button1" onclick="sos()"> SOS</button>
+                            <li><a href="login.html">{{ user.username }}(Logout)</a></li>
+                            
+                            
+
+                        </ul>
+                    </nav>
+                <img src="" class="">
+            </div>
+        
+    
+    </div>
+     <hr>
+     <!DOCTYPE html>
+<html>
+<head>
+	<title>Your Safety Plan</title>
+</head>
+<body>
+	<form> 
+        <div class="div">
+        {% for i in sos1 %}
+        
+		<label for="name">Life Anchors: </label>
+		<label>{{ i.La }}</label><br>
+        <hr>
+        
+		<label for="email">Friendly Places: </label>
+		<label>{{ i.Fp }}</label><br>
+        <hr>
+		<label for="phone">Support Network: </label>
+		<label>{{ i.Sn }}</label><br>
+        <hr>
+		<label for="address">Warning Signs: </label>
+		<label>{{ i.Ws }}</label><br>
+        <hr>
+		<label for="dob">Calming Activities: </label>
+		<label>{{ i.Ca }}</label><br>
+
+        {% endfor %}
+        </div>
+	</form>
+</body>
+</html>
+
